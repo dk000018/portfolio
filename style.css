@@ -98,7 +98,7 @@ nav ul li a:hover::after{
 
 .typo span::before{
     content: 'Software Engineer';
-    animation: words 14s infinite;
+    animation: words 20s infinite;
 }
 
 .typo span::after{
@@ -110,7 +110,7 @@ nav ul li a:hover::after{
     background-color: #000;
     border-left: 2px solid #00BFFF;
     right: -10px;
-    animation: cursor 0.8s infinite, typing 17.5s steps(14) infinite;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor{
@@ -121,17 +121,20 @@ nav ul li a:hover::after{
 }
 
 @keyframes words{
-    0%,25%{
+    0%,20%{
         content: 'Software Engineer';
     }
-    26%,50%{
+    21%,40%{
         content: 'Web Developer';
     }
-    51%,75%{
+    41%,60%{
         content: 'UI/UX Designer';
     }
-    76%,100%{
-        content: 'CAD & CAM Designer';
+    61%,80%{
+        content: 'CAD Designer';
+    }
+    81%,100%{
+        content: 'CAM Programmer';
     }
 }
 
