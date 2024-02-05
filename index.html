@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Kamalesh D - Software Developer</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+    <body>
+        <header id="home">
+            <div class="container">
+                <nav>
+                    <h1 class="nav-logo"><a href="#home"><span>D</span>k.</a></h1>
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Kamalesh</span> Devaraj</h1> 
+                    <div class="typo">
+                        <p>I'm a <span></span></p>
+                    </div>
+                    <div class="header-buttons">
+                        <a href="KAMALESH D Resume WEB.pdf" download="Resume" target="_blank">Download Resume</a>
+                        <a href="#contact" id="con-but">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+<!---------------------About Me --------------------->
+            <section id="about" class="about flex">
+                <div class="col1">
+                    <img src="img/aboutme.png" alt="dk">
+                </div>
+                <div class="col2">
+                    <h1>About <span>Me</span></h1>
+                    <p>
+                        Enthusiastic newcomer from Chennai, India, with a fervor for <span>web development</span>, <span>backend</span> technologies, and a flair for <span>UI/UX design</span>. Versatile skills extend to 3D design and CAM capabilities, showcasing a holistic approach to innovation. Eager to contribute my dynamic skill set to a forward-thinking software development team.
+                    </p>
+                    <div class="qual">
+                        <h2>Education</h2>
+                        <p>B.E - Electronics and Communication Engineering <br> <span>2019 - 2023</span></p>
+                    </div>
+                    <div class="qual">
+                        <h2>Experience</h2>
+                        <p>Actively looking for a job in Web Developer, UI/UX Desginer & Back-end Engineer roles</p>
+                        <div class="hire-button">
+                            <a href="#contact" id="con-but">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-----------------------Skills------------------------------------------------>            
+            <section class="container skills">
+                <h1>My <span>Skills</span></h1>
+                <h2>Front-End</h2>
+                <div class="skills-list">
+                    <div>
+                        <img src="img/icons/html.png" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/css.png" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/js.png" alt="Javascript ES6">
+                        <p>Javascript ES6</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/react.png" alt="React.js">
+                        <p>React.js</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/bootstrap.png" alt="Bootstrap CSS">
+                        <p>Bootstrap CSS</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/tailwind.png" alt="Tailwind CSS">
+                        <p>Tailwind CSS</p>
+                    </div>   
+                </div>
+                <h2>Back-End & Database</h2>
+                <div class="skills-list">
+                    <div>
+                        <img src="img/icons/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/nodewithexpress.png" alt="Node.js with Express.js">
+                        <p>Node.js with Express.js</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/mongodb.png" alt="Mongo DB">
+                        <p>Mongo DB</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/mysql.png" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+                <h2>Design</h2>
+                <div class="skills-list">
+                    <div>
+                        <img src="img/icons/figma.png" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/photoshop.png" alt="Adobe Photoshop">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                </div>
+                <h2>CAD & CAM</h2>
+                <div class="skills-list">
+                    <div>
+                        <img src="img/icons/autocad.png" alt="AutoCAD">
+                        <p>AutoCAD</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/powermill.png" alt="PowerMill">
+                        <p>Autodesk&trade; PowerMill</p>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------------Portfolio------------------------------------->            
+            <section id= "portfolio" class="container projects">
+                <h1>My <span>Portfolio</span></h1>
+                <div class="pro-list flex">
+                    <div class="pro-col1">
+                        <img src="img/metmet.png" alt="">
+                    </div>
+                    <div class="pro-col2">
+                        <h2>MetMet</h2>
+                        <p>This is a basic calculator webapp developed using <span>React.js</span> which is used to calculate the weight of the metals mainly, Industrial grade steels.</p>
+                        <div class="header-buttons">
+                            <a href="https://metmet.netlify.app/" target="_blank">Demo</a>
+                            <a href="https://github.com/dk000018/metmet" id="con-but"  target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-list flex">
+                    <div class="pro-col1">
+                        <img src="img/baapaa.png" alt="">
+                    </div>
+                    <div class="pro-col2">
+                        <h2>Baapaa Engineers</h2>
+                        <p>This is a responsive website developed using <span>HTML, CSS and Javascript</span> for an automotive component manufacturer.</p>
+                        <div class="header-buttons">
+                            <a href="www.baapaa.co.in" target="_blank">Demo</a>
+                            <a href="https://github.com/dk000018/" id="con-but"  target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-list flex">
+                    <div class="pro-col1">
+                        <img src="img/commingsoon.png" alt="">
+                    </div>
+                    <div class="pro-col2">
+                        <h2>RelateHub</h2>
+                        <p>This will be a chatting app developed using <span>React.js</span> to connect people.</p>  
+                    </div>
+                </div>
+                <div class="pro-list flex">
+                    <div class="pro-col1">
+                        <img src="img/commingsoon.png" alt="">
+                    </div>
+                    <div class="pro-col2">
+                        <h2>Ai Plugin Chatbot</h2>
+                        <p>This will be a Chatbot developed using <span>React.js</span> for front-end and <span>OpenAi</span> for back-end as an all purpose query solver</p> 
+                    </div>
+            </section>
+<!----------------------------------------Contact Me---------------------------->
+            <section id="contact"   class="container contact flex">
+                <div class="con-col1">
+                    <h1><span>Contact</span> Me</h1>
+                    <p><i class="fa-brands fa-whatsapp"></i></i> +91 8754506002</p>
+                    <p><i class="fa-solid fa-envelope"></i> kamalesh1804@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/dk18042002/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a> <br> <br>
+                    <a href="https://github.com/dk000018" target="_blank"><i class="fa-brands fa-github"></i> Github</a><br> <br>
+                    <a href="KAMALESH D Resume WEB.pdf" download="Resume" target="_blank"><i class="fa-solid fa-file"></i> Download Resume</a> 
+
+                </div>
+                <div class="con-col2">
+                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST" class="flex">
+
+                        <input type="hidden" name="access_key" value="fbc19b2d-d505-4cb4-9a8b-7f21febd60c6">
+
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Id" required>
+                        <input type="tel" name="Phone" pattern="[0-9]{10}" placeholder="Enter phone number" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Let's Talk</button>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; <span id="copyrightYear"></span> | Designed and Developed By <span>Kamalesh Devaraj</span> | All rights reserved.</p>
+        </footer>
+
+        <script>
+            // Update the copyright year dynamically
+            document.addEventListener("DOMContentLoaded", function() {
+                var copyrightYearElement = document.getElementById("copyrightYear");
+                if (copyrightYearElement) {
+                    var currentYear = new Date().getFullYear();
+                    copyrightYearElement.textContent = currentYear;
+                }
+            });
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+
+            var openmenu = () =>{
+                sidemenu.style.right='0';
+            }
+
+            var closemenu = () =>{
+                sidemenu.style.right='-200px';
+            }
+        </script>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>              
+    </body>
+
+</html>

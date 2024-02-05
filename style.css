@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 1rem 10%;
+}
+
+.nav-logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.nav-logo a span{
+    color: #00BFFF;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 2rem;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00BFFF;
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 15%;
+}
+
+.header-text h1{
+    font-size: 3rem;
+}
+
+.header-text h1 span{
+    color: #00BFFF;
+}
+
+.typo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.typo{
+    font-size: 2rem;
+}
+
+.typo span{
+    position: relative;
+    color: #00BFFF;
+}
+
+.typo span::before{
+    content: 'Software Engineer';
+    animation: words 14s infinite;
+}
+
+.typo span::after{
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 2.5rem;
+    color: #00BFFF;
+    background-color: #000;
+    border-left: 2px solid #00BFFF;
+    right: -10px;
+    animation: cursor 0.8s infinite, typing 17.5s steps(14) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid #000;
+    }
+
+}
+
+@keyframes words{
+    0%,25%{
+        content: 'Software Engineer';
+    }
+    26%,50%{
+        content: 'Web Developer';
+    }
+    51%,75%{
+        content: 'UI/UX Designer';
+    }
+    76%,100%{
+        content: 'CAD & CAM Designer';
+    }
+}
+
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.header-buttons{
+    margin-top: 4rem;
+}
+
+.header-buttons a{
+    margin-right: 2rem;
+    color: #000;
+    font-size: 1.15rem;
+    text-decoration: none;
+    background-color: #00BFFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+
+.header-buttons #con-but{
+    color: #00BFFF;
+    background-color: #000;
+    border: 1px solid #00BFFF;
+}
+
+.header-buttons a:hover {
+    box-shadow: 0 0 10px #00BFFF;
+}
+
+/*-----------------------About------------------*/
+
+.flex{
+    display: flex;
+}
+
+section{
+    margin-top: 5rem;
+}
+
+.about{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col1{
+    flex-basis: 25%;
+    border-radius: 1rem;
+    
+}
+
+
+.col1 img{
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #00BFFF;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.col1 img:hover{
+    box-shadow: 0 0 30px #00BFFF;
+}
+
+.col2{
+    flex-basis: 60%;
+}
+
+.col2 h1{
+    font-size: 3rem;
+}
+
+.col2 p{
+    text-align: justify;
+    margin-right: 10rem;
+    font-size: 1.15rem;
+}
+
+.col2 span{
+    color: #00BFFF;
+}
+
+.qual{
+ margin-top: 2rem;   
+}
+
+.qual span{
+    color: rgb(160, 158, 158);
+}
+
+.qual p{
+    margin-top: 0.5rem;
+}
+
+.hire-button{
+    margin-top: 2rem;
+}
+
+.hire-button a{
+    margin-right: 2rem;
+    color: #000;
+    font-size: 1.15rem;
+    text-decoration: none;
+    background-color: #00BFFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+
+
+.hire-button #con-but{
+    color: #00BFFF;
+    background-color: #000;
+    border: 1px solid #00BFFF;
+}
+
+.hire-button a:hover {
+    box-shadow: 0 0 10px #00BFFF;
+}
+
+/*----------------------------Skills------------------------*/
+
+.skills h1{
+    font-size: 3rem;
+}
+
+.skills span{
+    color: #00BFFF;
+}
+
+.skills-list{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.skills-list div{
+    box-shadow: 0 0 5px #00BFFF;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.skills-list div:hover{
+    box-shadow: 0 0 15px #00BFFF;
+    
+}
+
+
+.skills h2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #00BFFF;
+}
+
+.skills p{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.skills-list img{
+    width: 50px;
+}
+
+/*----------------------------------Projects------------------------------------*/
+.projects h1{
+    font-size: 3rem;
+}
+
+.projects span{
+    color: #00BFFF;
+}
+
+.pro-list{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+
+.pro-col1{
+    flex-basis: 25%;
+    box-shadow: 0 0 5px #00BFFF;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.pro-col1:hover{
+    box-shadow: 0 0 20px #00BFFF;
+}
+
+.pro-col2{
+    flex-basis: 60%;
+}
+
+.pro-col2 h2{
+    font-size: 1.5rem;
+}
+
+.pro-col2 p{
+    margin-top: 0.5rem;
+}
+
+.pro-col2 div{
+    margin-top: 2rem;
+}
+
+.contact{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.con-col1{
+    flex-basis: 35%;
+}
+
+.con-col1 h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.con-col1 h1 span{
+    color: #00BFFF;
+}
+
+.con-col1 p{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.con-col1 i{
+    color: #00BFFF;
+}
+
+.con-col1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.con-col2{
+    flex-basis: 60%;
+}
+
+.con-col2 form{
+    flex-direction: column;
+    width: 100%;
+}
+
+form input , form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+form button{
+    width: 100px;
+    margin: 1rem auto;
+    border: 0;
+    outline: none;
+    background-color: #00BFFF;
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    border-radius: 0.5rem;
+    color: #000;
+    transition: box-shadow 0.5s ease-in-out
+}
+
+form button:hover {
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+footer p{
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #00BFFF;
+}
+
+footer span{
+    color: #00BFFF;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/mobheader.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 2rem;
+    }
+
+    nav ul{
+        background-color: #00BFFF;
+        top: 0;
+        right: -200px;
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    
+    .container{
+        padding: 1rem 5%;
+    }
+    .nav-logo a{
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+    .header-text h1{
+        font-size: 2rem;
+    }
+    .typo{
+        margin-top: 1rem;
+        font-size: 1.75rem;
+    }
+    .header-buttons{
+        margin-top: 4rem;
+    }
+    
+    .header-buttons a{
+        color: #000;
+        font-size: 1rem;
+        text-decoration: none;
+        background-color: #00BFFF;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+    section{
+        margin-top: 3rem;
+        
+    }
+    
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col2{
+        width: 80%;
+    }    
+
+    .col2 h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .col2 p{
+        text-align: justify;
+        margin-right: 0;
+        margin-top: 1rem;
+        font-size: 1.rem;
+    }
+
+    .hire-button{
+        margin-top: 2rem;
+    }
+
+    .hire-button a{
+        margin-right: 0;
+        color: #000;
+        font-size: 1.15rem;
+        text-decoration: none;
+        background-color: #00BFFF;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .skills h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .projects h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .pro-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+    
+    .pro-col1{
+        flex-basis: 25%;
+        box-shadow: 0 0 5px #00BFFF;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+    }
+    
+    .pro-col2{
+        flex-basis: 60%;
+        margin: 1rem;
+    }
+    
+    .pro-col2 h2{
+        font-size: 1.25rem;
+    }
+    
+    .pro-col2 p{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .pro-col2 div{
+        margin-top: 2rem;
+    }
+        
+    .contact{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .con-col1 h1{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .con-col1 h1 span{
+        color: #00BFFF;
+    }
+
+    .con-col1 p{
+        font-size: 1rem;
+        margin: 1rem ;
+    }
+
+    .con-col1 i{
+        color: #00BFFF;
+    }
+
+    .con-col1 a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+
+    .con-col2 form{
+        margin-top: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
